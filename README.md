@@ -1,6 +1,7 @@
 
 
 Build Status badge: ![](https://github.com/sabtharishi/springboot-web/workflows/Build/badge.svg)
+Build Status badge: ![](https://github.com/sabtharishi/springboot-web/actions/workflows/artifact.yml/badge.svg)
 
 # Simple Spring boot app (No Tracing / No Spring cloud dependency)
 
