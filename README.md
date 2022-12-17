@@ -1,3 +1,7 @@
+
+
+https://github.com/sabtharishi/springboot-web/workflows/Java CI with Maven create artifact/badge.svg
+
 # Simple Spring boot app (No Tracing / No Spring cloud dependency)
 
 ### Versions
