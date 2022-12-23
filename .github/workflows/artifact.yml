@@ -27,7 +27,7 @@ jobs:
 
     steps:
     - name: Echo
-      run: echo ${{ env.JSON_VAL }}     
+      run: echo $JSON_VAL  
     
     - name: Checkout the code
       uses: actions/checkout@v3
