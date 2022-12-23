@@ -6,7 +6,7 @@
 # separate terms of service, privacy policy, and support
 # documentation.
 
-name: Build ${{GITHUB_BASE_REF}}
+name: Build ${{env.GITHUB_BASE_REF}}
 on:
   push:
     branches: [ "master" ]
