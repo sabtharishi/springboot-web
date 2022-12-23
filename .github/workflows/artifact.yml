@@ -6,7 +6,8 @@
 # separate terms of service, privacy policy, and support
 # documentation.
 
-name: Build
+name: Build 
+run-name: Build ${{ github.head_ref }} by @ ${{ github.actor }}
 on:
   push:
     branches: [ "master" ]
@@ -17,6 +18,7 @@ on:
     
 env:
   ARTIFACT_NAME: myartifact
+  JSON_VAL: ${{ toJSON(github) }}
   
 jobs:
   build:
@@ -24,6 +26,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - name: Echo
+      run: echo $JSON_VAL  
+    
     - name: Checkout the code
       uses: actions/checkout@v3
       
