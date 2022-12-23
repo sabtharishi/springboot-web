@@ -7,7 +7,7 @@
 # documentation.
 
 name: Build 
-run-name: Deploy to by @${{ github.actor }}
+run-name: Build ${{ github.head_ref }} by @ ${{ github.actor }}
 on:
   push:
     branches: [ "master" ]
