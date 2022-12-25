@@ -5,11 +5,9 @@ jobs:
   runtest:
     strategy:
       matrix:
-        batches0: ["B1", "B2", "B3"]
-        batches1: ["B1", "B2", "B3"]
-        batches2: ["B1", "B2", "B3"]
+        batches0: ["['B1']","['B2']"]
     runs-on: ubuntu-latest
     steps:
       - name: Echo something
-        run: echo "something "
+        run: echo " ${{ toJSON ( matrix.batches0 ) }} "
  
