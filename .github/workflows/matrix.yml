@@ -1,0 +1,13 @@
+name: Try Matrix
+on: push
+
+jobs:
+  runtest:
+    strategy:
+      matrix:
+        batches: ["B1", "B2", "B3"]
+    runs-on: ${{ matrix.batches }}
+    steps:
+      - name: Echo something
+        run: echo " ${{ matrix.batches }} "
+ 
