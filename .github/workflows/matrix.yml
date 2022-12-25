@@ -6,7 +6,7 @@ jobs:
     strategy:
       matrix:
         batches: ["B1", "B2", "B3"]
-    runs-on: ${{ matrix.batches }}
+    runs-on: ubuntu-latest
     steps:
       - name: Echo something
         run: echo " ${{ matrix.batches }} "
