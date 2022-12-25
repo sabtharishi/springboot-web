@@ -9,5 +9,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Echo something
-        run: echo " ${{ matrix.batches }} "
+        run: echo "something "
  
